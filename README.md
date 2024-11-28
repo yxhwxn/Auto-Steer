@@ -22,20 +22,8 @@ This prototype implementation is licensed under the 'MIT license' (see LICENSE).
 
 #### Auto-Steer-G already supports five open-source database systems:
 
-- PostgreSQL
-    - We tested AutoSteer with PostgreSQL 13
-- PrestoDB
-    - PrestoDB does not expose many rewrite rules. Therefore, the following patch exposes the top-7 hints we found in
-      our experiments.
-    - Get the most recent version of [PrestoDB](https://github.com/prestodb/presto)
-    - Apply the PrestoDB patch : `git apply Presto-disable-optimizers-through-session-properties.patch`
-    - Build PrestoDB from source and start the server
 - MySQL
     - We tested AutoSteer with MySQL 8
-- DuckDB
-    - Install the DuckDB-python package via `pip`
-- SparkSQL
-    - We run SparkSQL using the official Docker image of its most recent version
 
 #### DBMS Configuration
 
